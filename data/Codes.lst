@@ -202,3 +202,12 @@ write8 p00AA763C|0044178C 0x01
 
 Patch "Disable Background Pausing"
 write8 001FE5F0 0xEB
+
+Patch "Always Play 'Friends' Opening"
+writenop 0010BDDC 2
+
+Patch "Always Play 'Rise of the Icon' Opening"
+write8 0010BDDC 0xEB
+
+Patch "Switch Opening Order"
+write8 0010BDDC 0x74
